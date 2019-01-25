@@ -1069,6 +1069,7 @@ public final class NonBlockingStatsDClient implements StatsDClient {
     }
 
     private void send(final String message) {
+        System.out.println(message);
         queue.offer(message);
     }
     
