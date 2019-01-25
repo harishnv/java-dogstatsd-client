@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/DataDog/java-dogstatsd-client.svg?branch=master)](https://travis-ci.org/DataDog/java-dogstatsd-client)
 
+[![](https://jitpack.io/v/harishnv/java-dogstatsd-client.svg)](https://jitpack.io/#harishnv/java-dogstatsd-client)
+
 A statsd client library implemented in Java.  Allows for Java applications to easily communicate with statsd.
 
 This version was originally forked from [java-dogstatsd-client](https://github.com/indeedeng/java-dogstatsd-client) and [java-statsd-client](https://github.com/youdevise/java-statsd-client) but it is now the canonical home for the java-dogstatsd-client.  Collaborating with the former upstream projects we have now combined efforts to provide a single release.
@@ -13,8 +15,15 @@ See [CHANGELOG.md](CHANGELOG.md) for changes.
 The client jar is distributed via maven central, and can be downloaded [here](http://search.maven.org/#search%7Cga%7C1%7Cg%3Acom.datadoghq%20a%3Ajava-dogstatsd-client).
 
 ```xml
+<repositories>
+	<repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+	</repository>
+</repositories>
+
 <dependency>
-    <groupId>com.datadoghq</groupId>
+    <groupId>com.github.harishnv</groupId>
     <artifactId>java-dogstatsd-client</artifactId>
     <version>2.7</version>
 </dependency>
